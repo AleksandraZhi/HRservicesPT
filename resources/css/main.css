@@ -1,0 +1,17 @@
+:root {
+	--color--primary: #a50bde;
+	--color--secondary: #0041f5;
+	--color--accent: #fa1800;
+	--bg--grey: grey;
+	--bg--lightgrey: lightgrey;
+}
+
+/* COLOURS */
+
+h1 {
+	color: var(--color--secondary);
+}
+
+nav {
+	color: var(--color--primary);
+}
