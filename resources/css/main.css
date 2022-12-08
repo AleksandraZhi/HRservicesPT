@@ -1,17 +1,61 @@
 :root {
-	--color--primary: #a50bde;
-	--color--secondary: #0041f5;
-	--color--accent: #fa1800;
+	--color--primary: #670680;
+	--color--secondary: #001569;
+	--color--accent: #6e0f00;
 	--bg--grey: grey;
 	--bg--lightgrey: lightgrey;
 }
 
-/* COLOURS */
+/* FONTS */
 
-h1 {
-	color: var(--color--secondary);
+* {
+	font-family: 'Josefin Sans', Arial, sans-serif;
 }
 
-nav {
+.nav-link {
+	font-family: 'Oswald', Times, serif;
+	font-weight: 700;
+}
+
+/* NAVIGATION */
+
+header img {
+	width: 10vw;
+	max-width: 150px;
+	min-width: 70px;
+}
+
+/* FONT SIZES */
+
+nav .material-symbols-outlined {
+	font-size: 3rem;
+}
+
+nav .nav-link,
+#header__search .icon--search {
+	font-size: 1.5em;
+}
+
+@media screen and (max-width: 767px) {
+	nav .nav-link,
+	#header__search .icon--search {
+		font-size: 1.2em;
+	}
+}
+
+/* ICONS */
+
+/* COLOURS */
+
+header {
+	background-color: whitesmoke;
+}
+
+nav .nav-link {
+	color: var(--color--primary) !important;
+}
+
+.icon--search,
+.material-symbols-outlined {
 	color: var(--color--primary);
 }

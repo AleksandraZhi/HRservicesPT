@@ -6,6 +6,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./resources/css/main.css" />
 		<link rel="stylesheet" href="./resources/css/normalize.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+		/>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,500&family=Oswald:wght@400;700&display=swap');
+		</style>
 		<script
 			src="https://kit.fontawesome.com/5695f918f2.js"
 			crossorigin="anonymous"
@@ -22,43 +29,95 @@
 	</head>
 	<body>
 		<div class="container-fluid p-0 m-0">
-			<header class="row">
-				<div
-					id="header__brand"
-					class="col-2 d-flex justify-content-center align-items-center"
-				>
-					<h1>ASG</h1>
-				</div>
-				<div id="header__nav--main" class="col-8 d-flex">
+			<header class="row sticky-top d-flex justify-content-between">
+				<div id="header__nav--main" class="col p-0 m-0">
 					<nav
-						class="nav--desktop navbar navbar-expand-lg d-none d-md-flex"
-						aria-label="main navigatio menu"
+						class="navbar navbar-expand-lg"
+						aria-label="Main navigation menu"
 					>
-						<ul>
-							<li>Companies</li>
-							<li>Our Services</li>
-							<li>Candidates</li>
-							<li>About Us</li>
-							<li>Contact Us</li>
-							<li>Articles</li>
-							<li>More</li>
-						</ul>
+						<div id="header__brand" class="container-fluid ms-2 me-1">
+							<h1 class="sr-only">ASG</h1>
+							<img
+								src="./resources/img/ASG logo.svg"
+								alt="Altgott and Simpson Group logo"
+								aria-label="Altgott and Simpson Group logo"
+							/>
+							<button
+								class="navbar-toggler"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#navbarNav"
+								aria-controls="navbarNav"
+								aria-expanded="false"
+								aria-label="Toggle navigation"
+							>
+								<span
+									class="material-symbols-outlined p-0"
+									aria-label="main navigation menu"
+								>
+									menu
+								</span>
+							</button>
+							<div
+								class="navbar-collapse collapse flex-column align-items-center"
+								id="navbarNav"
+							>
+								<ul class="navbar-nav justify-content-center">
+									<li class="nav-item">
+										<a class="nav-link text-reset" href="#">Companies</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link text-reset" href="#">Our Services</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link text-reset" href="#">Candidates</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link text-reset" href="#">About Us</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link text-reset" href="#">Contact Us</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link text-reset" href="#">Articles</a>
+									</li>
+									<li class="nav-item text-reset">
+										<a class="nav-link text-reset" href="#">More</a>
+									</li>
+								</ul>
+								<form
+									id="header__search"
+									class="d-none d-lg-flex"
+									role="search"
+								>
+									<input
+										class="form-control"
+										type="search"
+										placeholder="Search"
+										aria-label="Search"
+									/>
+									<button
+										class="btn d-flex justify-content-center align-items-center p-0 m-0"
+										type="submit"
+									>
+										<span
+											class="material-symbols-outlined icon--search d-flex justify-content-center align-items-center px-1"
+										>
+											search
+										</span>
+									</button>
+								</form>
+							</div>
+						</div>
 					</nav>
-					<nav class="nav--mobile d-md-none d-flex">
-						<i
-							class="fa-solid fa-bars"
-							aria-label="main navigation menu logo"
-						></i>
-					</nav>
-					<div id="header__search">Search</div>
 				</div>
 			</header>
 
 			<main>
-				<section id="section__hero">
-					<h2>BRAND NAME</h2>
-					<p>Slogan</p>
-				</section>
+				<section
+					id="section__hero"
+					class="row d-flex justify-content-end px-1 p-md-5"
+				></section>
 				<section id="section__services"></section>
 				<section id="section__testimonials"></section>
 			</main>
