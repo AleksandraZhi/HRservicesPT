@@ -71,6 +71,12 @@ header img {
 	margin: 2em 0 0.1em;
 }
 
+/* MORE */
+
+#section__more .more--action button {
+	border-radius: 0 !important;
+}
+
 /* FOOTER */
 
 footer ul {
@@ -99,13 +105,16 @@ nav .nav-link,
 
 /* COLOURS */
 
-footer {
+footer,
+#section__more .more--action button,
+#section__more .more--action span {
 	color: whitesmoke;
 }
 
 header,
 #section__hero .hero--textbox,
-#section__testimonials {
+#section__more,
+.more--action {
 	background-color: whitesmoke;
 }
 
@@ -127,12 +136,26 @@ nav .nav-link {
 	border-top: 0.2rem solid var(--color--primary);
 }
 
+#section__testimonials,
+#section__more .more--textbox {
+	background-color: var(--bg--lightgrey);
+}
+
+#section__more .more--decoration {
+	border-top: 0.2rem solid var(--color--secondary);
+}
+
 .carousel-caption p:nth-child(2),
 .carousel-caption p:last-child {
 	color: var(--color--accent);
 }
 
-#carouselTestimonials .carousel-indicators [data-bs-target] {
+#section__more .more--action button {
+	background-color: var(--color--accent);
+}
+
+#carouselTestimonials .carousel-indicators [data-bs-target],
+#section__more .more--action .material-symbols-outlined {
 	background-color: var(--color--secondary);
 }
 
