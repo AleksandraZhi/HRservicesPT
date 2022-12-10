@@ -71,6 +71,12 @@ header img {
 	margin: 2em 0 0.1em;
 }
 
+/* FOOTER */
+
+footer ul {
+	list-style: none;
+}
+
 /* FONT SIZES */
 
 nav .material-symbols-outlined {
@@ -92,6 +98,10 @@ nav .nav-link,
 /* ICONS */
 
 /* COLOURS */
+
+footer {
+	color: whitesmoke;
+}
 
 header,
 #section__hero .hero--textbox,
@@ -129,4 +139,8 @@ nav .nav-link {
 #section__testimonials,
 #carouselTestimonials .carousel-caption {
 	color: var(--color--secondary);
+}
+
+footer {
+	background-color: var(--color--primary);
 }
