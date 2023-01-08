@@ -148,6 +148,11 @@ nav .nav-link {
 	);
 }
 
+#section__services h2,
+#section__services .section__services--text {
+	color: whitesmoke;
+}
+
 #section__testimonials,
 #section__more .more--textbox {
 	background-color: var(--bg--lightgrey);
