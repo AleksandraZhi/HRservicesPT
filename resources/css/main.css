@@ -1,9 +1,12 @@
 :root {
-	--color--primary: #670680;
-	--color--secondary: #001569;
-	--color--accent: #6e0f00;
+	--color--primary: #00b0b9;
+	--color--secondary: #61007d;
+	--color--tertiary: #f2f0e3;
+	--color--accent-red: #aa0061;
+	--color--accent-blue: #151f6d;
+	--color--accent-orange: #ffa400;
+	--bg--white: whitesmoke;
 	--bg--grey: grey;
-	--bg--lightgrey: lightgrey;
 }
 
 /* FONTS */
@@ -15,6 +18,13 @@
 .nav-link {
 	font-family: 'Oswald', Times, serif;
 	font-weight: 700;
+}
+
+/* ALL SECTIONS */
+
+#section__testimonials,
+#section__services {
+	scroll-margin-top: 5rem;
 }
 
 /* NAVIGATION */
@@ -41,6 +51,10 @@ header img {
 #section__hero .hero--textbox .hero--decoration {
 	position: static;
 	top: 0%;
+}
+
+#section__hero .hero--textbox {
+	border-radius: 5px;
 }
 
 /* SERVICES */
@@ -79,6 +93,12 @@ header img {
 	border-radius: 0 !important;
 }
 
+@media screen and (max-width: 280px) {
+	#section__more .material-symbols-outlined {
+		display: none;
+	}
+}
+
 /* CONTACT US section */
 
 /* FOOTER */
@@ -115,82 +135,94 @@ footer,
 #section__services h2,
 #section__services .section__services--text,
 #section__contact {
-	color: whitesmoke;
+	color: var(--color--tertiary);
 }
 
 header,
-#section__hero .hero--textbox,
 #section__more,
 .more--action {
-	background-color: whitesmoke;
+	background-color: var(--bg--white);
+}
+
+#section__hero .hero--textbox {
+	background-color: white;
 }
 
 .hero--textbox,
 nav .nav-link {
-	color: var(--color--primary) !important;
+	color: var(--color--secondary) !important;
 }
 
 .icon--search,
 .material-symbols-outlined {
-	color: var(--color--primary);
+	color: var(--color--secondary);
 }
 
 #section__hero .hero--decoration {
-	border-top: 1rem solid var(--color--primary);
+	border-top: 1rem solid var(--color--secondary);
 }
 
 #section__hero .hero--textbox .hero--decoration {
-	border-top: 0.2rem solid var(--color--primary);
+	border-top: 0.2rem solid var(--color--secondary);
 }
 
 #section__services {
 	background: linear-gradient(
 		to bottom,
-		var(--color--primary) 0%,
-		var(--color--primary) 30%,
+		var(--color--secondary) 0%,
+		var(--color--secondary) 30%,
 		whitesmoke 30%,
 		whitesmoke 100%
 	);
 }
 
+#section__hero p span,
+#section__hero p button,
 #section__services p span,
-#section__services p button {
-	color: var(--color--accent);
+#section__services p button,
+.modal-dialog button {
+	color: var(--color--accent-red);
 }
 
-#section__testimonials,
+#section__testimonials {
+	background-color: var(--color--tertiary);
+}
+
+#carouselTestimonials .carousel-indicators [data-bs-target] {
+	/* color: white; */
+}
+
 #section__more .more--textbox {
-	background-color: var(--bg--lightgrey);
+	/* background-color: var(--color--tertiary); */
 }
 
 #section__more .more--decoration {
 	border-top: 0.2rem solid var(--color--secondary);
 }
 
-.carousel-caption p:nth-child(2),
-.carousel-caption p:last-child {
-	color: var(--color--accent);
+#section__testimonials .carousel-caption p:nth-child(2),
+#section__testimonials .carousel-caption p:last-child {
+	color: var(--color--secondary);
 }
 
 #section__more .more--action button {
-	background-color: var(--color--accent);
+	background-color: var(--color--accent-red);
 }
 
-#carouselTestimonials .carousel-indicators [data-bs-target],
 #section__more .more--action .material-symbols-outlined {
 	background-color: var(--color--secondary);
 }
 
-#section__testimonials,
-#carouselTestimonials .carousel-caption {
-	color: var(--color--secondary);
+#section__hero .hero--textbox,
+#section__services .card {
+	border: var(--color--secondary) solid 1px;
 }
 
 #section__contact,
 footer {
-	background-color: var(--color--primary);
+	background-color: var(--color--secondary);
 }
 
 footer {
-	border-top: solid 2px whitesmoke;
+	border-top: solid 2px var(--color--tertiary);
 }
