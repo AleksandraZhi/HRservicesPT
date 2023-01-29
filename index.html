@@ -1,3 +1,4 @@
+<?php include './resources/php/submit-form.php';?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -684,6 +685,132 @@
 									<button class="btn">Get free evaluation</button>
 								</div>
 							</div>
+						</div>
+					</div>
+				</section>
+				<section id="section__contact" class="m-0 p-0 py-4">
+					<div class="row m-0 p-0">
+						<div class="col-12 d-flex justify-content-center pt-5">
+							<h2>Contact Us</h2>
+						</div>
+					</div>
+					<div class="row m-0 p-0">
+						<div class="col d-flex justify-content-center">
+							<form
+								id="contact-us-form"
+								class="form-class"
+								method="post"
+								action=""
+							>
+								<div class="form-group">
+									<div class="d-flex">
+										<div>
+											<label for="FirstName" class="form-label my-1 mt-3"
+												>Your first name</label
+											>
+											<div class="form-input-group pe-2">
+												<input
+													type="text"
+													id="FirstName"
+													name="FirstName"
+													class="form-control"
+													required
+												/>
+											</div>
+										</div>
+										<div>
+											<label for="LastName" class="form-label my-1 mt-3"
+												>Your last name</label
+											>
+											<div class="form-input-group">
+												<input
+													type="text"
+													id="LastName"
+													name="LastName"
+													class="form-control"
+													required
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="Email" class="form-label my-1 mt-3"
+										>Your email address</label
+									>
+									<div class="input-group">
+										<input
+											type="email"
+											id="Email"
+											name="Email"
+											class="form-control"
+											required
+										/>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="Message" class="form-label my-1 mt-3"
+										>Your message</label
+									>
+									<div class="input-group">
+										<textarea
+											id="Message"
+											name="Message"
+											class="form-control"
+											rows="6"
+											maxlength="3000"
+											required
+										></textarea>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="Company" class="form-label my-1 mt-3"
+										>Company</label
+									>
+									<div class="input-group">
+										<input
+											type="company"
+											id="company"
+											name="company"
+											class="form-control"
+										/>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="Position" class="form-label my-1 mt-3"
+										>Position</label
+									>
+									<div class="input-group">
+										<input
+											type="position"
+											id="position"
+											name="position"
+											class="form-control"
+										/>
+									</div>
+								</div>
+
+								<div class="form-group mt-3">
+									<button
+										type="submit"
+										id="contact-us_submit"
+										class="btn text-white border-white"
+										data-submit="Submitting..."
+									>
+										Send Message
+									</button>
+								</div>
+
+								<div class="form-group mt-2">
+									<p id="form-thank-you" class="mb-1">
+										<?php echo $form_thank_you ?>
+									</p>
+								</div>
+							</form>
 						</div>
 					</div>
 				</section>

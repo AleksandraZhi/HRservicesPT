@@ -79,6 +79,8 @@ header img {
 	border-radius: 0 !important;
 }
 
+/* CONTACT US section */
+
 /* FOOTER */
 
 footer ul {
@@ -109,7 +111,10 @@ nav .nav-link,
 
 footer,
 #section__more .more--action button,
-#section__more .more--action span {
+#section__more .more--action span,
+#section__services h2,
+#section__services .section__services--text,
+#section__contact {
 	color: whitesmoke;
 }
 
@@ -148,11 +153,6 @@ nav .nav-link {
 	);
 }
 
-#section__services h2,
-#section__services .section__services--text {
-	color: whitesmoke;
-}
-
 #section__services p span,
 #section__services p button {
 	color: var(--color--accent);
@@ -186,6 +186,11 @@ nav .nav-link {
 	color: var(--color--secondary);
 }
 
+#section__contact,
 footer {
 	background-color: var(--color--primary);
+}
+
+footer {
+	border-top: solid 2px whitesmoke;
 }
