@@ -3,6 +3,7 @@
 	--color--blue-semitransparent: #00b0b9eb;
 	--color--purple: #61007d;
 	--color--offwhite: #f2f0e3;
+	--color--offwhite-semitransparent: #f2f0e3d4;
 	--color--accent-red: #aa0061;
 	--color--accent-blue: #151f6d;
 	--color--accent-orange: #ffa400;
@@ -53,7 +54,13 @@ nav .nav-link {
 #section__hero {
 	background-image: url('../img/hero_img_bg.jpg');
 	background-size: cover;
-	height: 80vh;
+	height: 90vh;
+	background-position: bottom;
+}
+
+#section__hero .section__hero--brand {
+	max-width: 100px;
+	border-radius: 50%;
 }
 
 #section__hero .hero--decoration {
@@ -61,10 +68,15 @@ nav .nav-link {
 	top: 50%;
 }
 
-#section__hero .hero--textbox .hero--decoration {
+#section__hero a {
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+/* #section__hero .hero--textbox .hero--decoration {
 	position: static;
 	top: 0%;
-}
+} */
 
 #section__hero .hero--textbox {
 	border-radius: 5px;
@@ -166,26 +178,31 @@ footer,
 }
 
 #section__hero .hero--textbox {
-	background-color: white;
+	background-color: var(--color--offwhite-semitransparent);
 }
 
 nav .nav-link {
 	color: var(--color--offwhite) !important;
 }
 
-.hero--textbox,
+#section__hero .hero--textbox,
 .icon--search,
+#section__hero a,
 .material-symbols-outlined {
 	color: var(--color--purple);
 }
 
-#section__hero .hero--decoration {
-	border-top: 1rem solid var(--color--purple);
+#section__hero .hero--textbox h2 {
+	color: black;
 }
 
-#section__hero .hero--textbox .hero--decoration {
+/* #section__hero .hero--decoration {
+	border-top: 1rem solid var(--color--purple);
+} */
+
+/* #section__hero .hero--textbox .hero--decoration {
 	border-top: 0.2rem solid var(--color--purple);
-}
+} */
 
 #section__services {
 	background: linear-gradient(
@@ -230,11 +247,15 @@ nav .nav-link {
 	background-color: var(--color--accent-red);
 }
 
-#section__more .more--action .material-symbols-outlined {
+#section__more .more--action .material-symbols-outlined,
+#section__hero .section__hero--brand {
 	background-color: var(--color--purple);
 }
 
-#section__hero .hero--textbox,
+#section__hero a {
+	border: var(--color--purple) solid 2px;
+}
+
 #section__services .card {
 	border: var(--color--purple) solid 1px;
 }
