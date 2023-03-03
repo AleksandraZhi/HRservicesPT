@@ -1,4 +1,3 @@
-<?php include './resources/php/submit-form.php';?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -30,90 +29,78 @@
 	</head>
 	<body>
 		<div class="container-fluid p-0 m-0">
-			<header class="row sticky-top d-flex justify-content-between m-0 p-0">
+			<header class="row d-flex justify-content-between m-0 p-0">
 				<div id="header__nav--main" class="col p-0 m-0">
 					<nav
-						class="navbar navbar-expand-lg"
+						class="navbar fixed-top px-2 py-md-3"
 						aria-label="Main navigation menu"
 					>
-						<div id="header__brand" class="container-fluid ms-2 me-1">
-							<h1 class="sr-only">ASG</h1>
-							<img
-								src="./resources/img/ASG logo.svg"
-								alt="Altgott and Simpson Group logo"
-								aria-label="Altgott and Simpson Group logo"
-							/>
+						<div class="container-fluid">
+							<div id="header__brand">
+								<h1 class="sr-only">Altgott & Simposon Group</h1>
+								<img
+									class="d-none d-sm-block img-fluid header__brand--desktop"
+									src="./resources/logo/asg-logo-main-white.svg"
+									alt="Altgott and Simpson Group logo"
+								/>
+								<img
+									class="d-sm-none d-block img-fluid header__brand--mobile"
+									src="./resources/logo/asg-insignia-white.svg"
+									alt="Altgott and Simpson Group logo"
+								/>
+							</div>
 							<button
 								class="navbar-toggler"
 								type="button"
-								data-bs-toggle="collapse"
-								data-bs-target="#navbarNav"
-								aria-controls="navbarNav"
-								aria-expanded="false"
-								aria-label="Toggle navigation"
+								data-bs-toggle="offcanvas"
+								data-bs-target="#offcanvasNavbar"
+								aria-controls="offcanvasNavbar"
 							>
-								<span
-									class="material-symbols-outlined p-0"
-									aria-label="main navigation menu"
-								>
-									menu
-								</span>
+								<span class="navbar-toggler-icon"></span>
 							</button>
 							<div
-								class="navbar-collapse collapse flex-column align-items-center"
-								id="navbarNav"
+								class="offcanvas offcanvas-start"
+								tabindex="-1"
+								id="offcanvasNavbar"
+								aria-labelledby="offcanvasNavbarLabel"
 							>
-								<ul class="navbar-nav justify-content-center">
-									<li class="nav-item">
-										<a class="nav-link text-reset" href="#section__hero"
-											>About Us</a
-										>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link text-reset" href="#section__services"
-											>Our Services</a
-										>
-									</li>
-									<li class="nav-item">
-										<a
-											class="nav-link text-reset"
-											href="https://share-eu1.hsforms.com/1Tz9w0cdBSbmMEXpVKqHYUAfwrtd"
-											>Candidates</a
-										>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link text-reset" href="#section__testimonials"
-											>Testimonials</a
-										>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link text-reset" href="#footer__contacts"
-											>Contact Us</a
-										>
-									</li>
-								</ul>
-								<form
-									id="header__search"
-									class="d-none d-lg-flex"
-									role="search"
-								>
-									<input
-										class="form-control"
-										type="search"
-										placeholder="Search"
-										aria-label="Search"
-									/>
+								<div class="offcanvas-header">
 									<button
-										class="btn d-flex justify-content-center align-items-center p-0 m-0"
-										type="submit"
-									>
-										<span
-											class="material-symbols-outlined icon--search d-flex justify-content-center align-items-center px-1"
-										>
-											search
-										</span>
-									</button>
-								</form>
+										type="button"
+										class="btn-close btn-close-white"
+										data-bs-dismiss="offcanvas"
+										aria-label="Close"
+									></button>
+								</div>
+								<div class="offcanvas-body">
+									<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+										<li class="nav-item">
+											<a class="nav-link active" aria-current="page" href="#"
+												>About</a
+											>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Our services</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Candidates</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Testimonials</a>
+										</li>
+									</ul>
+									<!-- <form class="d-flex mt-3" role="search">
+										<input
+											class="form-control me-2"
+											type="search"
+											placeholder="Search"
+											aria-label="Search"
+										/>
+										<button class="btn btn-success" type="submit">
+											Search
+										</button>
+									</form> -->
+								</div>
 							</div>
 						</div>
 					</nav>

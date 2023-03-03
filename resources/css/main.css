@@ -1,7 +1,8 @@
 :root {
-	--color--primary: #00b0b9;
-	--color--secondary: #61007d;
-	--color--tertiary: #f2f0e3;
+	--color--blue: #00b0b9;
+	--color--blue-semitransparent: #00b0b9eb;
+	--color--purple: #61007d;
+	--color--offwhite: #f2f0e3;
 	--color--accent-red: #aa0061;
 	--color--accent-blue: #151f6d;
 	--color--accent-orange: #ffa400;
@@ -29,10 +30,18 @@
 
 /* NAVIGATION */
 
-header img {
-	width: 10vw;
-	max-width: 150px;
-	min-width: 70px;
+#header__brand .header__brand--desktop {
+	width: 250px;
+	max-width: 350px;
+	min-width: 170px;
+}
+
+#header__brand .header__brand--mobile {
+	width: 50px;
+}
+
+#header__nav--main .navbar-toggler-icon {
+	background-image: url('../icons/navbar-menu-white.png');
 }
 
 /* HERO */
@@ -129,16 +138,19 @@ nav .nav-link,
 
 /* COLOURS */
 
+#header__nav--main .active {
+	background-color: var(--color--blue-semitransparent);
+}
+
 footer,
 #section__more .more--action button,
 #section__more .more--action span,
 #section__services h2,
 #section__services .section__services--text,
 #section__contact {
-	color: var(--color--tertiary);
+	color: var(--color--offwhite);
 }
 
-header,
 #section__more,
 .more--action {
 	background-color: var(--bg--white);
@@ -150,27 +162,27 @@ header,
 
 .hero--textbox,
 nav .nav-link {
-	color: var(--color--secondary) !important;
+	color: var(--color--purple) !important;
 }
 
 .icon--search,
 .material-symbols-outlined {
-	color: var(--color--secondary);
+	color: var(--color--purple);
 }
 
 #section__hero .hero--decoration {
-	border-top: 1rem solid var(--color--secondary);
+	border-top: 1rem solid var(--color--purple);
 }
 
 #section__hero .hero--textbox .hero--decoration {
-	border-top: 0.2rem solid var(--color--secondary);
+	border-top: 0.2rem solid var(--color--purple);
 }
 
 #section__services {
 	background: linear-gradient(
 		to bottom,
-		var(--color--secondary) 0%,
-		var(--color--secondary) 30%,
+		var(--color--purple) 0%,
+		var(--color--purple) 30%,
 		whitesmoke 30%,
 		whitesmoke 100%
 	);
@@ -185,7 +197,7 @@ nav .nav-link {
 }
 
 #section__testimonials {
-	background-color: var(--color--tertiary);
+	background-color: var(--color--offwhite);
 }
 
 #carouselTestimonials .carousel-indicators [data-bs-target] {
@@ -193,16 +205,16 @@ nav .nav-link {
 }
 
 #section__more .more--textbox {
-	/* background-color: var(--color--tertiary); */
+	/* background-color: var(--color--offwhite); */
 }
 
 #section__more .more--decoration {
-	border-top: 0.2rem solid var(--color--secondary);
+	border-top: 0.2rem solid var(--color--purple);
 }
 
 #section__testimonials .carousel-caption p:nth-child(2),
 #section__testimonials .carousel-caption p:last-child {
-	color: var(--color--secondary);
+	color: var(--color--purple);
 }
 
 #section__more .more--action button {
@@ -210,19 +222,19 @@ nav .nav-link {
 }
 
 #section__more .more--action .material-symbols-outlined {
-	background-color: var(--color--secondary);
+	background-color: var(--color--purple);
 }
 
 #section__hero .hero--textbox,
 #section__services .card {
-	border: var(--color--secondary) solid 1px;
+	border: var(--color--purple) solid 1px;
 }
 
 #section__contact,
 footer {
-	background-color: var(--color--secondary);
+	background-color: var(--color--purple);
 }
 
 footer {
-	border-top: solid 2px var(--color--tertiary);
+	border-top: solid 2px var(--color--offwhite);
 }
