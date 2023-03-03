@@ -21,6 +21,10 @@
 	font-weight: 700;
 }
 
+nav .nav-link {
+	text-transform: uppercase;
+}
+
 /* ALL SECTIONS */
 
 #section__testimonials,
@@ -138,8 +142,13 @@ nav .nav-link,
 
 /* COLOURS */
 
-#header__nav--main .active {
+#header__nav--main .active,
+#header__nav--main .offcanvas {
 	background-color: var(--color--blue-semitransparent);
+}
+
+#header__nav--main .navbar-toggler {
+	border: 1px solid var(--color--offwhite);
 }
 
 footer,
@@ -160,11 +169,11 @@ footer,
 	background-color: white;
 }
 
-.hero--textbox,
 nav .nav-link {
-	color: var(--color--purple) !important;
+	color: var(--color--offwhite) !important;
 }
 
+.hero--textbox,
 .icon--search,
 .material-symbols-outlined {
 	color: var(--color--purple);
