@@ -10,9 +10,12 @@
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
 		/>
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,500&family=Oswald:wght@400;700&display=swap');
-		</style>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins&display=swap"
+			rel="stylesheet"
+		/>
 		<script
 			src="https://kit.fontawesome.com/5695f918f2.js"
 			crossorigin="anonymous"
@@ -80,10 +83,16 @@
 											<a class="nav-link" aria-current="page" href="#">About</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#">Our services</a>
+											<a class="nav-link" href="#section__services"
+												>Our services</a
+											>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" href="#">Candidates</a>
+											<a
+												class="nav-link"
+												href="https://forms.monday.com/forms/3613c9883fce402e6e37f6ad455429f4?r=use1"
+												>Candidates</a
+											>
 										</li>
 										<!-- <li class="nav-item">
 											<a class="nav-link" href="#">Testimonials</a>
@@ -113,11 +122,11 @@
 					class="row d-flex justify-content-center justify-content-md-start px-1 p-md-5 m-0"
 				>
 					<div
-						class="col col-sm-10 col-md-8 col-lg-6 d-flex flex-column justify-content-center alight-items-center ps-sm-0 mt-5"
+						class="col col-sm-10 col-md-9 col-lg-6 d-flex flex-column justify-content-center alight-items-center px-0 mt-5"
 					>
 						<div class="hero--textbox my-sm-5 p-3 pb-5">
 							<img
-								class="section__hero--brand p-3 m-3"
+								class="section__hero--brand p-3 m-0 m-sm-3"
 								src="./resources/logo/asg-insignia-fullcolour.svg"
 								alt="Altgott and Simpson Group logo"
 							/>
@@ -140,42 +149,42 @@
 				</section>
 				<section id="section__services" class="m-0 p-0 py-5">
 					<div class="row d-flex justify-content-center p-0 m-0">
-						<div class="col-11 col-sm-8 d-flex flex-column">
+						<div class="col-11 col-sm-8 d-flex flex-column align-items-center">
 							<h2>Our Services</h2>
-							<p class="section__services--text">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-								nunc sapien, tristique vel feugiat at, semper eu urna. Duis
-								tristique velit orci, sit amet consectetur.
+							<p class="text-center">
+								Looking for staff? Altgott & Simpson Group has you covered.
 							</p>
 						</div>
 					</div>
 					<div class="row d-flex justify-content-center p-0 m-0">
-						<div class="col-11 col-sm-8">
+						<div class="col-11 col-sm-9">
 							<div
 								class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 p-0 m-0"
 							>
 								<div class="col">
-									<div class="card">
-										<div class="card-body">
-											<h3 class="card-title">Outplacements</h3>
+									<div class="card h-100">
+										<div
+											class="card-body d-flex flex-column justify-content-between align-items-center"
+										>
+											<img
+												class="mb-3"
+												src="./resources/icons/services-briefing.png"
+												alt="decorative"
+											/>
+											<h3 class="card-title">Briefing</h3>
 											<p class="card-text">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												Donec nunc sapien, tristique vel feugiat at, semper eu
-												urna. Duis tristique velit orci, sit amet consectetur.
+												Tell us all about your dream candidate, including
+												skills, attributes, and experience they need to bring to
+												the role.
 											</p>
-											<p class="d-flex">
-												<span
-													class="material-symbols-outlined align-self-center py-2 px-0"
-												>
-													add
-												</span>
+											<p class="d-flex align-self-start">
 												<button
 													type="button"
-													class="btn p-1 align-self-end"
+													class="btn m-1 p-0"
 													data-bs-toggle="modal"
 													data-bs-target="#staticBackdrop1"
 												>
-													Learn More
+													More
 												</button>
 											</p>
 										</div>
@@ -196,7 +205,7 @@
 										<div class="modal-content">
 											<div class="modal-header">
 												<h1 class="modal-title fs-5" id="staticBackdropLabel1">
-													<h3 class="card-title">Outplacements</h3>
+													<h3 class="card-title">Briefing</h3>
 												</h1>
 												<button
 													type="button"
@@ -223,26 +232,29 @@
 									</div>
 								</div>
 								<div class="col">
-									<div class="card">
-										<div class="card-body">
-											<h3 class="card-title">Immigrations & Visas</h3>
+									<div class="card h-100">
+										<div
+											class="card-body d-flex flex-column justify-content-between align-items-center"
+										>
+											<img
+												class="mb-3"
+												src="./resources/icons/services-sourcing-talent.png"
+												alt="decorative"
+											/>
+											<h3 class="card-title">Sourcing talent</h3>
 											<p class="card-text">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												Donec nunc sapien, tristique vel feugiat at, semper eu
-												urna. Duis tristique velit orci, sit amet consectetur.
+												We source the best candidates using different
+												recruitment platforms, including thoses focused on the
+												hospitality industry.
 											</p>
-											<p class="d-flex">
-												<span
-													class="material-symbols-outlined align-self-center py-2 px-0"
-												>
-													add </span
-												><button
+											<p class="d-flex align-self-start">
+												<button
 													type="button"
-													class="btn p-1 align-self-end"
+													class="btn m-1 p-0"
 													data-bs-toggle="modal"
 													data-bs-target="#staticBackdrop2"
 												>
-													Learn More
+													More
 												</button>
 											</p>
 										</div>
@@ -263,7 +275,7 @@
 										<div class="modal-content">
 											<div class="modal-header">
 												<h1 class="modal-title fs-5" id="staticBackdropLabel2">
-													<h3 class="card-title">Immigrations & Visas</h3>
+													<h3 class="card-title">Sourcing talent</h3>
 												</h1>
 												<button
 													type="button"
@@ -291,26 +303,29 @@
 									</div>
 								</div>
 								<div class="col">
-									<div class="card">
-										<div class="card-body">
-											<h3 class="card-title">HR Consultancy</h3>
+									<div class="card h-100">
+										<div
+											class="card-body d-flex flex-column justify-content-between align-items-center"
+										>
+											<img
+												class="mb-3"
+												src="./resources/icons/services-screening.png"
+												alt="decorative"
+											/>
+											<h3 class="card-title">Screening & shortlisting</h3>
 											<p class="card-text">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												Donec nunc sapien, tristique vel feugiat at, semper eu
-												urna. Duis tristique velit orci, sit amet consectetur.
+												We review all CV's and personally interview the
+												candidates. We will then select the strongest candidates
+												and send them over to you.
 											</p>
-											<p class="d-flex">
-												<span
-													class="material-symbols-outlined align-self-center py-2 px-0"
-												>
-													add </span
-												><button
+											<p class="d-flex align-self-start">
+												<button
 													type="button"
-													class="btn p-1 align-self-end"
+													class="btn m-1 p-0"
 													data-bs-toggle="modal"
 													data-bs-target="#staticBackdrop3"
 												>
-													Learn More
+													More
 												</button>
 											</p>
 										</div>
@@ -331,7 +346,7 @@
 										<div class="modal-content">
 											<div class="modal-header">
 												<h1 class="modal-title fs-5" id="staticBackdropLabel3">
-													<h3 class="card-title">HR Consultancy</h3>
+													<h3 class="card-title">Screening & shortlisting</h3>
 												</h1>
 												<button
 													type="button"
@@ -358,26 +373,28 @@
 									</div>
 								</div>
 								<div class="col">
-									<div class="card">
-										<div class="card-body">
-											<h3 class="card-title">Candidate Tools</h3>
+									<div class="card h-100">
+										<div
+											class="card-body d-flex flex-column justify-content-between align-items-center"
+										>
+											<img
+												class="mb-3"
+												src="./resources/icons/services-scheduling.png"
+												alt="decorative"
+											/>
+											<h3 class="card-title">Scheduling interview</h3>
 											<p class="card-text">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												Donec nunc sapien, tristique vel feugiat at, semper eu
-												urna. Duis tristique velit orci, sit amet consectetur.
+												We will liaise with you and the candidates to schedule
+												the interviews at the time that best suits you both.
 											</p>
-											<p class="d-flex">
-												<span
-													class="material-symbols-outlined align-self-center py-2 px-0"
-												>
-													add </span
-												><button
+											<p class="d-flex align-self-start">
+												<button
 													type="button"
-													class="btn p-1 align-self-end"
+													class="btn m-1 p-0"
 													data-bs-toggle="modal"
 													data-bs-target="#staticBackdrop4"
 												>
-													Learn More
+													More
 												</button>
 											</p>
 										</div>
@@ -398,7 +415,7 @@
 										<div class="modal-content">
 											<div class="modal-header">
 												<h1 class="modal-title fs-5" id="staticBackdropLabel4">
-													<h3 class="card-title">Candidate Tools</h3>
+													<h3 class="card-title">Scheduling interview</h3>
 												</h1>
 												<button
 													type="button"
@@ -425,26 +442,29 @@
 									</div>
 								</div>
 								<div class="col">
-									<div class="card">
-										<div class="card-body">
-											<h3 class="card-title">Workshops</h3>
+									<div class="card h-100">
+										<div
+											class="card-body d-flex flex-column justify-content-between align-items-center"
+										>
+											<img
+												class="mb-3"
+												src="./resources/icons/services-selection.png"
+												alt="decorative"
+											/>
+											<h3 class="card-title">Final selection</h3>
 											<p class="card-text">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												Donec nunc sapien, tristique vel feugiat at, semper eu
-												urna. Duis tristique velit orci, sit amet consectetur.
+												We will keep in touch during the entire interview
+												process, offering support and any advice from interview
+												procedures to making an offer and salary negotiations.
 											</p>
-											<p class="d-flex">
-												<span
-													class="material-symbols-outlined align-self-center py-2 px-0"
-												>
-													add </span
-												><button
+											<p class="d-flex align-self-start">
+												<button
 													type="button"
-													class="btn p-1 align-self-end"
+													class="btn m-1 p-0"
 													data-bs-toggle="modal"
 													data-bs-target="#staticBackdrop5"
 												>
-													Learn More
+													More
 												</button>
 											</p>
 										</div>
@@ -465,7 +485,7 @@
 										<div class="modal-content">
 											<div class="modal-header">
 												<h1 class="modal-title fs-5" id="staticBackdropLabel5">
-													<h3 class="card-title">Workshops</h3>
+													<h3 class="card-title">Final selection</h3>
 												</h1>
 												<button
 													type="button"
@@ -492,26 +512,29 @@
 									</div>
 								</div>
 								<div class="col">
-									<div class="card">
-										<div class="card-body">
-											<h3 class="card-title">Support Consultancy</h3>
+									<div class="card h-100">
+										<div
+											class="card-body d-flex flex-column justify-content-between align-items-center"
+										>
+											<img
+												class="mb-3"
+												src="./resources/icons/services-briefing.png"
+												alt="decorative"
+											/>
+											<h3 class="card-title">Follow up procedure</h3>
 											<p class="card-text">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												Donec nunc sapien, tristique vel feugiat at, semper eu
-												urna. Duis tristique velit orci, sit amet consectetur.
+												The final step is to ensure a perfect match, so 8 weeks
+												after the appointment, we will be in touch to confirm
+												there is a happy fit.
 											</p>
-											<p class="d-flex">
-												<span
-													class="material-symbols-outlined align-self-center py-2 px-0"
-												>
-													add </span
-												><button
+											<p class="d-flex align-self-start">
+												<button
 													type="button"
-													class="btn p-1 align-self-end"
+													class="btn m-1 p-0"
 													data-bs-toggle="modal"
 													data-bs-target="#staticBackdrop6"
 												>
-													Learn More
+													More
 												</button>
 											</p>
 										</div>
@@ -532,7 +555,7 @@
 										<div class="modal-content">
 											<div class="modal-header">
 												<h1 class="modal-title fs-5" id="staticBackdropLabel6">
-													<h3 class="card-title">Support Consultancy</h3>
+													<h3 class="card-title">Follow up procedure</h3>
 												</h1>
 												<button
 													type="button"
