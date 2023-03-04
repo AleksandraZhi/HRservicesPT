@@ -37,6 +37,10 @@
 	}
 }
 
+#footer__contacts i {
+	font-size: 2rem;
+}
+
 nav .nav-link,
 #section__services button,
 #section__team .card--team-position,
@@ -63,14 +67,16 @@ nav .nav-link,
 
 /* NAVIGATION */
 
-#header__brand .header__brand--desktop {
+#header__brand .header__brand--desktop,
+footer .footer__brand--desktop {
 	width: 250px;
 	max-width: 350px;
 	min-width: 170px;
 }
 
-#header__brand .header__brand--mobile {
-	width: 50px;
+#header__brand .header__brand--mobile,
+footer .footer__brand--mobile {
+	max-width: 50px;
 }
 
 #header__nav--main .navbar-toggler-icon {
@@ -298,7 +304,9 @@ h2,
 }
 
 #carouselTestimonials .carousel-indicators [data-bs-target],
-#section__counter {
+#section__counter,
+footer .material-symbols-outlined,
+#footer__contacts i {
 	color: white;
 }
 
