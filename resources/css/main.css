@@ -24,7 +24,8 @@
 
 #section__services h2,
 #section__testimonials h2,
-#section__team h2 {
+#section__team h2,
+#section__counter .card-counter {
 	font-size: 3rem;
 }
 
@@ -38,7 +39,8 @@
 
 nav .nav-link,
 #section__services button,
-#section__team .card--team-position {
+#section__team .card--team-position,
+#section__counter .card-text {
 	text-transform: uppercase;
 }
 
@@ -135,6 +137,32 @@ nav .nav-link,
 
 #section__team h3 {
 	margin: 1.5rem;
+}
+
+/* COUNTER */
+
+#section__counter {
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url('../img/counter_img_bg.jpg');
+	background-size: cover;
+	/* height: 50vh; */
+	background-position: bottom;
+}
+
+#section__counter .card-counter {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+#section__counter .card {
+	border-radius: 25% 10%;
+}
+
+@media screen and (max-width: 768px) {
+	#section__counter {
+		/* height: 80vh; */
+	}
 }
 
 /* TESTIMONIALS */
@@ -269,12 +297,9 @@ h2,
 	border-bottom: 2px solid var(--color--blue);
 }
 
-#carouselTestimonials .carousel-indicators [data-bs-target] {
-	/* color: white; */
-}
-
-#section__more .more--textbox {
-	/* background-color: var(--color--offwhite); */
+#carouselTestimonials .carousel-indicators [data-bs-target],
+#section__counter {
+	color: white;
 }
 
 #section__more .more--decoration {
@@ -295,11 +320,17 @@ h2,
 	background-color: var(--color--purple);
 }
 
+#section__counter .card {
+	background-color: var(--color--purple);
+	opacity: 0.7;
+}
+
 #section__hero a {
 	border: var(--color--purple) solid 2px;
 }
 
-#section__team .card img {
+#section__team .card img,
+#section__counter .card-counter {
 	background-color: var(--color--blue);
 }
 
