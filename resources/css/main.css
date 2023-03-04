@@ -37,15 +37,27 @@
 	}
 }
 
-#footer__contacts i {
+#footer__contacts i,
+#section__about p {
 	font-size: 2rem;
+}
+
+#section__about h2 {
+	font-size: 1rem;
 }
 
 nav .nav-link,
 #section__services button,
 #section__team .card--team-position,
-#section__counter .card-text {
+#section__counter .card-text,
+#section__about h2 {
 	text-transform: uppercase;
+}
+
+@media screen and (max-width: 450px) {
+	#section__about p {
+		font-size: 1.5rem;
+	}
 }
 
 /* ALL SECTIONS */
@@ -131,6 +143,78 @@ footer .footer__brand--mobile {
 
 #section__services .card h3 {
 	margin-bottom: 1.5rem;
+}
+
+/* ABOUT */
+
+#section__about .blocks {
+	position: relative;
+	height: 750px;
+}
+
+#section__about .block-purple--big {
+	position: absolute;
+	height: 400px;
+	width: 60%;
+	z-index: -6;
+}
+
+#section__about .block-white {
+	position: absolute;
+	height: 400px;
+	width: 40%;
+	top: 200px;
+	left: 50vw;
+	z-index: -5;
+}
+
+#section__about .block-logo {
+	position: absolute;
+	opacity: 0.5;
+	height: 450px;
+	width: 450px;
+	top: 165px;
+	z-index: -2;
+}
+
+.block-picture {
+	position: absolute;
+	height: 500px;
+	width: auto;
+	left: 20%;
+	top: 10%;
+	z-index: -4;
+}
+
+#section__about .block-purple--small {
+	position: absolute;
+	height: 400px;
+	width: 200px;
+	left: 30%;
+	top: 40%;
+	z-index: -3;
+}
+
+#section__about .block-text {
+	position: absolute;
+	top: 350px;
+	left: 40%;
+	height: 300px;
+	width: 400px;
+	z-index: 1;
+}
+
+@media screen and (min-width: 451px) and (max-width: 600px) {
+	#section__about .block-text {
+		left: 20%;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	#section__about .block-text {
+		left: 1%;
+		width: 95%;
+	}
 }
 
 /* TEAM  */
@@ -242,7 +326,8 @@ nav .nav-link,
 /* COLOURS */
 
 #header__nav--main .active,
-#header__nav--main .offcanvas {
+#header__nav--main .offcanvas,
+#section__about .block-text {
 	background-color: var(--color--blue-semitransparent);
 }
 
@@ -306,7 +391,9 @@ h2,
 #carouselTestimonials .carousel-indicators [data-bs-target],
 #section__counter,
 footer .material-symbols-outlined,
-#footer__contacts i {
+#footer__contacts i,
+#section__about,
+#section__about h2 {
 	color: white;
 }
 
@@ -324,8 +411,14 @@ footer .material-symbols-outlined,
 }
 
 #section__more .more--action .material-symbols-outlined,
-#section__hero .section__hero--brand {
+#section__hero .section__hero--brand,
+#section__about .block-purple--small,
+#section__about .block-purple--big {
 	background-color: var(--color--purple);
+}
+
+#section__about .block-white {
+	background-color: var(--color--offwhite);
 }
 
 #section__counter .card {
