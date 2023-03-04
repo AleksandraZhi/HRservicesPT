@@ -54,7 +54,8 @@ nav .nav-link,
 #section__services button,
 #section__team .card--team-position,
 #section__counter .card-text,
-#section__about h2 {
+#section__about h2,
+#section__more .button-more {
 	text-transform: uppercase;
 }
 
@@ -118,7 +119,8 @@ footer .footer__brand--mobile {
 	top: 50%;
 }
 
-#section__hero a {
+#section__hero a,
+#section__more .button-more {
 	border-radius: 5px;
 	text-decoration: none;
 }
@@ -289,17 +291,61 @@ footer .footer__brand--mobile {
 
 /* MORE */
 
-#section__more .more--action button {
-	border-radius: 0 !important;
+#section__more .more-blocks {
+	position: relative;
+	height: 750px;
 }
 
-@media screen and (max-width: 280px) {
-	#section__more .material-symbols-outlined {
-		display: none;
+#section__more .more-block--purple {
+	position: absolute;
+	height: 500px;
+	width: 200px;
+	top: 5%;
+	left: 5%;
+}
+
+#section__more .more-block--blue {
+	position: absolute;
+	height: 80%;
+	width: 70%;
+	left: 20%;
+}
+
+#section__more .more-block--picture {
+	position: absolute;
+	height: 600px;
+	top: 10%;
+	left: 10%;
+}
+
+#section__more .more-block--text {
+	position: absolute;
+	height: 50%;
+	width: 40%;
+	left: 55%;
+	top: 20%;
+}
+
+#section__more .button-more {
+	max-width: 150px;
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+	#section__more .more-block--text {
+		width: 50%;
+		left: 35%;
+		top: 45%;
 	}
 }
 
-/* CONTACT US section */
+@media screen and (max-width: 500px) {
+	#section__more .more-block--text {
+		height: 35%;
+		width: 90%;
+		left: 6%;
+		top: 45%;
+	}
+}
 
 /* FOOTER */
 
@@ -325,8 +371,6 @@ nav .nav-link,
 	}
 }
 
-/* ICONS */
-
 /* COLOURS */
 
 #header__nav--main .active,
@@ -334,19 +378,17 @@ nav .nav-link,
 	background-color: var(--color--blue-semitransparent);
 }
 
-#header__nav--main .navbar-toggler {
+#header__nav--main .navbar-toggler,
+#section__more .button-more {
 	border: 1px solid var(--color--offwhite);
 }
 
 footer,
-#section__more .more--action button,
-#section__more .more--action span,
 #section__contact {
 	color: var(--color--offwhite);
 }
 
-#section__more,
-.more--action {
+#section__more {
 	background-color: var(--bg--white);
 }
 
@@ -396,12 +438,11 @@ h2,
 footer .material-symbols-outlined,
 #footer__contacts i,
 #section__about,
-#section__about h2 {
+#section__about h2,
+#section__more .more-blocks,
+#section__more .more-blocks h2,
+#section__more .button-more {
 	color: white;
-}
-
-#section__more .more--decoration {
-	border-top: 0.2rem solid var(--color--purple);
 }
 
 #section__testimonials .carousel-caption p:nth-child(2),
@@ -409,11 +450,6 @@ footer .material-symbols-outlined,
 	color: var(--color--purple);
 }
 
-#section__more .more--action button {
-	background-color: var(--color--accent-red);
-}
-
-#section__more .more--action .material-symbols-outlined,
 #section__hero .section__hero--brand,
 #section__about .block-purple--small,
 #section__about .block-purple--big {
@@ -435,11 +471,14 @@ footer .material-symbols-outlined,
 
 #section__team .card img,
 #section__counter .card-counter,
-#section__about .block-text {
+#section__about .block-text,
+#section__more .more-block--blue,
+#section__more .more-block--text {
 	background-color: var(--color--blue);
 }
 
 #section__services .card img,
+#section__more .more-block--purple,
 #section__contact,
 footer {
 	background-color: var(--color--purple);
