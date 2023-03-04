@@ -46,6 +46,10 @@
 	font-size: 1rem;
 }
 
+#section__about p {
+	font-weight: bold;
+}
+
 nav .nav-link,
 #section__services button,
 #section__team .card--team-position,
@@ -326,8 +330,7 @@ nav .nav-link,
 /* COLOURS */
 
 #header__nav--main .active,
-#header__nav--main .offcanvas,
-#section__about .block-text {
+#header__nav--main .offcanvas {
 	background-color: var(--color--blue-semitransparent);
 }
 
@@ -431,7 +434,8 @@ footer .material-symbols-outlined,
 }
 
 #section__team .card img,
-#section__counter .card-counter {
+#section__counter .card-counter,
+#section__about .block-text {
 	background-color: var(--color--blue);
 }
 
