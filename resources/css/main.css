@@ -150,7 +150,7 @@ footer .footer__brand--mobile {
 
 @media screen and (max-width: 399px) {
 	#section__hero {
-		height: 115vh;
+		height: 100%;
 	}
 	#section__hero .hero--textbox {
 		margin-top: 2.5rem !important;
