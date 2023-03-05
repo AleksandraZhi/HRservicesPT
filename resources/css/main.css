@@ -46,11 +46,13 @@
 	font-size: 1rem;
 }
 
+#section__hero .hero--textbox a,
 #section__about p {
 	font-weight: bold;
 }
 
 nav .nav-link,
+#section__hero .hero--textbox a,
 #section__services button,
 #section__team .card--team-position,
 #section__counter .card-text,
@@ -66,11 +68,6 @@ nav .nav-link,
 }
 
 /* ALL SECTIONS */
-
-#section__testimonials,
-#section__services {
-	scroll-margin-top: 5rem;
-}
 
 #section__hero .hero--textbox,
 #section__services .card img {
@@ -93,11 +90,16 @@ footer .footer__brand--desktop {
 
 #header__brand .header__brand--mobile,
 footer .footer__brand--mobile {
+	width: 50px;
 	max-width: 50px;
 }
 
 #header__nav--main .navbar-toggler-icon {
 	background-image: url('../icons/navbar-menu-white.png');
+}
+
+#header__nav--main .nav-link:hover {
+	cursor: pointer;
 }
 
 /* HERO */
@@ -133,6 +135,25 @@ footer .footer__brand--mobile {
 @media screen and (max-width: 500px) {
 	#section__hero .section__hero--brand {
 		max-width: 80px;
+	}
+}
+
+@media screen and (min-width: 400px) and (max-width: 575px) {
+	#section__hero {
+		height: 90vh;
+	}
+
+	#section__hero .hero--textbox {
+		margin-top: 2.5rem !important;
+	}
+}
+
+@media screen and (max-width: 399px) {
+	#section__hero {
+		height: 115vh;
+	}
+	#section__hero .hero--textbox {
+		margin-top: 2.5rem !important;
 	}
 }
 
@@ -378,9 +399,12 @@ nav .nav-link,
 	background-color: var(--color--blue-semitransparent);
 }
 
-#header__nav--main .navbar-toggler,
-#section__more .button-more {
+#header__nav--main .navbar-toggler {
 	border: 1px solid var(--color--offwhite);
+}
+
+#section__more .button-more {
+	border: 2px solid var(--color--offwhite);
 }
 
 footer,

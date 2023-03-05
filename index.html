@@ -22,7 +22,7 @@
 			rel="stylesheet"
 		/>
 		<script defer src="./resources/js/index.js"></script>
-		<!--Bootstrap library script -->
+		<!--Bootstrap library script cdn -->
 		<script
 			src="https://kit.fontawesome.com/5695f918f2.js"
 			crossorigin="anonymous"
@@ -54,7 +54,7 @@
 									alt="Altgott and Simpson Group logo"
 								/>
 								<img
-									class="d-sm-none d-block img-fluid header__brand--mobile"
+									class="d-block d-sm-none img-fluid header__brand--mobile"
 									src="./resources/logo/asg-insignia-white.svg"
 									alt="Altgott and Simpson Group logo"
 								/>
@@ -86,36 +86,33 @@
 									<ul
 										class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3"
 									>
-										<li class="nav-item">
-											<a class="nav-link" aria-current="page" href="#">About</a>
+										<li class="nav-item" data-bs-dismiss="offcanvas">
+											<span class="nav-link" data-href="#section__team"
+												>About</span
+											>
 										</li>
-										<li class="nav-item">
+										<li class="nav-item" data-bs-dismiss="offcanvas">
+											<span class="nav-link" data-href="#section__services"
+												>Our services</span
+											>
+										</li>
+										<!-- <li class="nav-item" data-bs-dismiss="offcanvas">
+											<a class="nav-link" href="#section__team">About</a>
+										</li>
+										<li class="nav-item" data-bs-dismiss="offcanvas">
 											<a class="nav-link" href="#section__services"
 												>Our services</a
 											>
-										</li>
-										<li class="nav-item">
+										</li> -->
+										<li class="nav-item" data-bs-dismiss="offcanvas">
 											<a
 												class="nav-link"
+												data-href="none"
 												href="https://forms.monday.com/forms/3613c9883fce402e6e37f6ad455429f4?r=use1"
 												>Candidates</a
 											>
 										</li>
-										<!-- <li class="nav-item">
-											<a class="nav-link" href="#">Testimonials</a>
-										</li> -->
 									</ul>
-									<!-- <form class="d-flex mt-3" role="search">
-										<input
-											class="form-control me-2"
-											type="search"
-											placeholder="Search"
-											aria-label="Search"
-										/>
-										<button class="btn btn-success" type="submit">
-											Search
-										</button>
-									</form> -->
 								</div>
 							</div>
 						</div>
@@ -128,32 +125,35 @@
 					id="section__hero"
 					class="row d-flex justify-content-center justify-content-md-start px-1 p-md-5 m-0"
 				>
-					<div
-						class="col col-sm-10 col-md-9 col-lg-6 d-flex flex-column justify-content-center alight-items-center px-0 mt-5"
-					>
-						<div class="hero--textbox my-sm-5 p-3 pb-5">
-							<img
-								class="section__hero--brand p-3 m-0 m-sm-3"
-								src="./resources/logo/asg-insignia-fullcolour.svg"
-								alt="Altgott and Simpson Group logo"
-							/>
-							<h2 class="p-3">Altogott & Simpson Group</h2>
-							<p class="px-3">
-								Founded in 2022, Altgott & Simpson Group assists you to quickly
-								find and hire the best talent for less. Our team's background
-								combines recruitment experience with best-in-class customer
-								service, and an in house immigration team to ease and optimise
-								your entire recruitment process.
-							</p>
-							<a
-								class="mx-3 p-2"
-								href="mailto:thais@altgottandsimposongroup.com"
-							>
-								Contact us
-							</a>
+					<div id="observer-hero">
+						<div
+							class="col col-sm-10 col-md-9 col-lg-6 d-flex flex-column justify-content-center alight-items-center px-0 mt-5"
+						>
+							<div class="hero--textbox my-sm-5 p-3 pb-5">
+								<img
+									class="section__hero--brand p-3 m-0 m-sm-3"
+									src="./resources/logo/asg-insignia-fullcolour.svg"
+									alt="Altgott and Simpson Group logo"
+								/>
+								<h2 class="pb-2 px-3">Altogott & Simpson Group</h2>
+								<p class="px-3 pb-2">
+									Founded in 2022, Altgott & Simpson Group assists you to
+									quickly find and hire the best talent for less. Our team's
+									background combines recruitment experience with best-in-class
+									customer service, and an in house immigration team to ease and
+									optimise your entire recruitment process.
+								</p>
+								<a
+									class="mx-3 p-2"
+									href="mailto:thais@altgottandsimposongroup.com"
+								>
+									Contact us
+								</a>
+							</div>
 						</div>
 					</div>
 				</section>
+
 				<section id="section__services" class="m-0 p-0 py-5">
 					<div class="row d-flex justify-content-center p-0 m-0">
 						<div class="col-11 col-sm-8 d-flex flex-column align-items-center">
@@ -178,13 +178,13 @@
 												src="./resources/icons/services-briefing.png"
 												alt="decorative"
 											/>
-											<h3 class="card-title">Briefing</h3>
+											<h3 class="card-title text-center">Briefing</h3>
 											<p class="card-text">
 												Tell us all about your dream candidate, including
 												skills, attributes, and experience they need to bring to
 												the role.
 											</p>
-											<p class="d-flex align-self-start">
+											<p class="d-flex align-self-start d-none">
 												<button
 													type="button"
 													class="btn m-1 p-0"
@@ -248,13 +248,13 @@
 												src="./resources/icons/services-sourcing-talent.png"
 												alt="decorative"
 											/>
-											<h3 class="card-title">Sourcing talent</h3>
+											<h3 class="card-title text-center">Sourcing talent</h3>
 											<p class="card-text">
 												We source the best candidates using different
 												recruitment platforms, including thoses focused on the
 												hospitality industry.
 											</p>
-											<p class="d-flex align-self-start">
+											<p class="d-flex align-self-start d-none">
 												<button
 													type="button"
 													class="btn m-1 p-0"
@@ -319,13 +319,15 @@
 												src="./resources/icons/services-screening.png"
 												alt="decorative"
 											/>
-											<h3 class="card-title">Screening & shortlisting</h3>
+											<h3 class="card-title text-center">
+												Screening & shortlisting
+											</h3>
 											<p class="card-text">
 												We review all CV's and personally interview the
 												candidates. We will then select the strongest candidates
 												and send them over to you.
 											</p>
-											<p class="d-flex align-self-start">
+											<p class="d-flex align-self-start d-none">
 												<button
 													type="button"
 													class="btn m-1 p-0"
@@ -389,12 +391,14 @@
 												src="./resources/icons/services-scheduling.png"
 												alt="decorative"
 											/>
-											<h3 class="card-title">Scheduling interview</h3>
+											<h3 class="card-title text-center">
+												Scheduling interview
+											</h3>
 											<p class="card-text">
 												We will liaise with you and the candidates to schedule
 												the interviews at the time that best suits you both.
 											</p>
-											<p class="d-flex align-self-start">
+											<p class="d-flex align-self-start d-none">
 												<button
 													type="button"
 													class="btn m-1 p-0"
@@ -458,13 +462,13 @@
 												src="./resources/icons/services-selection.png"
 												alt="decorative"
 											/>
-											<h3 class="card-title">Final selection</h3>
+											<h3 class="card-title text-center">Final selection</h3>
 											<p class="card-text">
 												We will keep in touch during the entire interview
 												process, offering support and any advice from interview
 												procedures to making an offer and salary negotiations.
 											</p>
-											<p class="d-flex align-self-start">
+											<p class="d-flex align-self-start d-none">
 												<button
 													type="button"
 													class="btn m-1 p-0"
@@ -528,13 +532,15 @@
 												src="./resources/icons/services-briefing.png"
 												alt="decorative"
 											/>
-											<h3 class="card-title">Follow up procedure</h3>
+											<h3 class="card-title text-center">
+												Follow up procedure
+											</h3>
 											<p class="card-text">
 												The final step is to ensure a perfect match, so 8 weeks
 												after the appointment, we will be in touch to confirm
 												there is a happy fit.
 											</p>
-											<p class="d-flex align-self-start">
+											<p class="d-flex align-self-start d-none">
 												<button
 													type="button"
 													class="btn m-1 p-0"
@@ -636,7 +642,7 @@
 											>
 												<img
 													class="mb-3"
-													src="./resources/img/profile-celina.png"
+													src="./resources/img/profile-thais-purple.jpg"
 													alt="decorative"
 												/>
 												<h3 class="card-title">Thais Altgott</h3>
@@ -672,7 +678,7 @@
 											>
 												<img
 													class="mb-3"
-													src="./resources/img/profile-celina.png"
+													src="./resources/img/profile-celina-purple.jpg"
 													alt="decorative"
 												/>
 												<h3 class="card-title">Celina Simpson</h3>
@@ -926,7 +932,7 @@
 					class="col d-flex justify-content-center align-items-center my-1"
 				>
 					<ul class="p-0 m-0">
-						<li>
+						<li class="text-center text-sm-start">
 							Altgott & Simpson Group&copy;
 							<script>
 								document.write(new Date().getFullYear())
@@ -936,13 +942,14 @@
 				</div>
 			</footer>
 		</div>
-
+		<!--Bootstrap js-->
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
 			crossorigin="anonymous"
 		></script>
-		<script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+		<!-- <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script> -->
+		<script src="./resources/js/purecounter_vanilla.js"></script>
 		<script>
 			new PureCounter()
 		</script>
