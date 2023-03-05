@@ -102,6 +102,12 @@ footer .footer__brand--mobile {
 	cursor: pointer;
 }
 
+@media screen and (max-width: 399px) {
+	#header__brand .header__brand--desktop {
+		width: 100px;
+	}
+}
+
 /* HERO */
 
 #section__hero {
