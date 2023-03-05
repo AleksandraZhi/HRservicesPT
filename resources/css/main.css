@@ -200,14 +200,18 @@ footer .footer__brand--mobile {
 	opacity: 0.5;
 	height: 450px;
 	width: 450px;
+	max-height: 90vw;
+	max-width: 90vw;
 	top: 165px;
 	z-index: -2;
 }
 
-.block-picture {
+#section__about .block-picture {
 	position: absolute;
-	height: 500px;
-	width: auto;
+	height: auto;
+	width: 50vw;
+	max-height: 500px;
+	max-width: fit-content;
 	left: 20%;
 	top: 10%;
 	z-index: -4;
@@ -227,7 +231,7 @@ footer .footer__brand--mobile {
 	top: 350px;
 	left: 40%;
 	height: 300px;
-	width: 400px;
+	width: 55%;
 	z-index: 1;
 }
 
@@ -235,12 +239,21 @@ footer .footer__brand--mobile {
 	#section__about .block-text {
 		left: 20%;
 	}
+	#section__about .block-picture {
+		width: 70vw;
+	}
 }
 
 @media screen and (max-width: 450px) {
 	#section__about .block-text {
 		left: 1%;
 		width: 95%;
+	}
+
+	#section__about .block-picture {
+		width: 90vw;
+		left: 4%;
+		top: 20%;
 	}
 }
 
@@ -334,7 +347,11 @@ footer .footer__brand--mobile {
 
 #section__more .more-block--picture {
 	position: absolute;
-	height: 600px;
+	height: auto;
+	width: 80vw;
+	max-height: 600px;
+	max-width: fit-content;
+	overflow-x: hidden;
 	top: 10%;
 	left: 10%;
 }
@@ -365,6 +382,9 @@ footer .footer__brand--mobile {
 		width: 90%;
 		left: 6%;
 		top: 45%;
+	}
+	#section__more .more-block--picture {
+		top: 13%;
 	}
 }
 
