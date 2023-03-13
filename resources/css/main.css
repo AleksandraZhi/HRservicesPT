@@ -64,7 +64,8 @@ nav .nav-link,
 #section__counter .card-text,
 #section__about h2,
 #section__more .button-more,
-#section__candidates .button-candidates {
+#section__candidates .button-candidates,
+.button-vacancies--apply {
 	text-transform: uppercase;
 }
 
@@ -137,7 +138,8 @@ footer .footer__brand--mobile {
 
 #section__hero a,
 #section__more .button-more,
-#section__candidates .button-candidates {
+#section__candidates .button-candidates,
+.button-vacancies--apply {
 	border-radius: 5px;
 	text-decoration: none;
 }
@@ -448,7 +450,8 @@ nav .nav-link,
 /* COLOURS */
 
 #header__nav--main .active,
-#header__nav--main .offcanvas {
+#header__nav--main .offcanvas,
+.navbar-active {
 	background-color: var(--color--blue-semitransparent);
 }
 
@@ -484,7 +487,8 @@ h2,
 .material-symbols-outlined,
 #section__services .card-title,
 #section__vacancies .card-title,
-#section__candidates .button-candidates {
+#section__candidates .button-candidates,
+.button-vacancies--apply {
 	color: var(--color--purple);
 }
 
@@ -548,7 +552,8 @@ footer .material-symbols-outlined,
 }
 
 #section__hero a,
-#section__candidates .button-candidates {
+#section__candidates .button-candidates,
+.button-vacancies--apply {
 	border: var(--color--purple) solid 2px;
 }
 
