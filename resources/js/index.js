@@ -6,9 +6,21 @@ document.addEventListener('click', function (event) {
 	if (!event.target.matches('#header__nav--main .nav-link')) return
 	event.preventDefault()
 	const section = document.querySelector(event.target.dataset.href)
-	const scrollDistance =
-		window.pageYOffset + section.getBoundingClientRect().top - 85
-	window.scroll(0, scrollDistance)
+	const page = document.querySelector(event.target.dataset.page)
+	let currentUrl = window.location.href
+	if (!currentUrl.includes('index.html')) {
+		currentUrl =
+			currentUrl
+				.split('/')
+				.filter(each => !each.includes('vacancies.html'))
+				.join('/') + '/index.html'
+		window.location.href = currentUrl
+	}
+	document.addEventListener('DOMContentLoaded', function (event) {
+		const scrollDistance =
+			window.pageYOffset + section.getBoundingClientRect().top - 85
+		window.scroll(0, scrollDistance)
+	})
 })
 
 // below is observer to highlight navbar when scrolling down
@@ -49,5 +61,11 @@ const observerHide = new IntersectionObserver(
 	handleIntersectionHide,
 	optionsHide
 )
-targetShow.forEach(target => observerShow.observe(target))
-observerHide.observe(targetHide)
+
+if (targetShow) {
+	targetShow.forEach(target => observerShow.observe(target))
+}
+
+if (targetHide) {
+	observerHide.observe(targetHide)
+}
