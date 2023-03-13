@@ -52,6 +52,7 @@
 }
 
 nav .nav-link,
+#section__hero h2,
 #section__hero .hero--textbox a,
 #section__services button,
 #section__team .card--team-position,
@@ -85,7 +86,7 @@ nav .nav-link,
 footer .footer__brand--desktop {
 	width: 250px;
 	max-width: 350px;
-	min-width: 170px;
+	min-width: 150px;
 }
 
 #header__brand .header__brand--mobile,
@@ -164,6 +165,10 @@ footer .footer__brand--mobile {
 }
 
 /* SERVICES */
+
+#section__services .card-text {
+	text-align: justify;
+}
 
 #section__services .card img {
 	max-width: 70px;
