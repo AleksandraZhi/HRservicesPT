@@ -42,17 +42,13 @@
 }
 
 #footer__contacts i,
-#section__about p,
+#section__about h2,
 button.close {
 	font-size: 2rem;
 }
 
-#section__about h2 {
-	font-size: 1rem;
-}
-
 #section__hero .hero--textbox a,
-#section__about p {
+#section__about h2 {
 	font-weight: bold;
 }
 
@@ -63,7 +59,6 @@ nav .nav-link,
 #section__vacancies button,
 #section__team .card--team-position,
 #section__counter .card-text,
-#section__about h2,
 #section__more .button-more,
 #section__candidates .button-candidates,
 .button-vacancies--apply {
@@ -71,7 +66,7 @@ nav .nav-link,
 }
 
 @media screen and (max-width: 450px) {
-	#section__about p {
+	#section__about h2 {
 		font-size: 1.5rem;
 	}
 }
@@ -145,11 +140,6 @@ footer .footer__brand--mobile {
 	text-decoration: none;
 }
 
-/* #section__hero .hero--textbox .hero--decoration {
-	position: static;
-	top: 0%;
-} */
-
 @media screen and (max-width: 500px) {
 	#section__hero .section__hero--brand {
 		max-width: 80px;
@@ -196,88 +186,45 @@ footer .footer__brand--mobile {
 
 /* ABOUT */
 
-#section__about .blocks {
+#section__about .section__about--logo {
 	position: relative;
-	height: 750px;
 }
 
-#section__about .block-purple--big {
-	position: absolute;
-	height: 400px;
-	width: 60%;
-	z-index: -6;
-}
-
-#section__about .block-white {
-	position: absolute;
-	height: 400px;
-	width: 40%;
-	top: 200px;
-	left: 50vw;
-	z-index: -5;
-}
-
-#section__about .block-logo {
-	position: absolute;
-	opacity: 0.5;
-	height: 450px;
-	width: 450px;
-	max-height: 90vw;
-	max-width: 90vw;
-	top: 165px;
-	z-index: -2;
-}
-
-#section__about .block-picture {
-	position: absolute;
+#section__about .section__about--logo-md,
+#section__about .section__about--logo-sm {
+	max-width: 80px;
 	height: auto;
-	width: 50vw;
-	max-height: 500px;
-	max-width: fit-content;
-	left: 20%;
-	top: 10%;
-	z-index: -4;
 }
 
-#section__about .block-purple--small {
+#section__about .section__about--logo-sm {
 	position: absolute;
-	height: 400px;
-	width: 200px;
-	left: 30%;
-	top: 40%;
-	z-index: -3;
+	bottom: 1.75rem;
 }
 
-#section__about .block-text {
-	position: absolute;
-	top: 350px;
-	left: 40%;
-	height: 300px;
-	width: 55%;
-	z-index: 1;
-}
-
-@media screen and (min-width: 451px) and (max-width: 600px) {
-	#section__about .block-text {
-		left: 20%;
-	}
-	#section__about .block-picture {
-		width: 70vw;
+@media screen and (max-width: 800px) {
+	#section__about .section__about--logo-md {
+		max-width: 50px;
 	}
 }
 
-@media screen and (max-width: 450px) {
-	#section__about .block-text {
-		left: 1%;
-		width: 95%;
-	}
-
-	#section__about .block-picture {
-		width: 90vw;
-		left: 4%;
-		top: 20%;
+@media screen and (min-width: 301px) and (max-width: 400px) {
+	#section__about .section__about--logo-sm {
+		bottom: 1.5rem;
+		max-width: 50px;
 	}
 }
+
+@media screen and (max-width: 300px) {
+	#section__about .section__about--logo-sm {
+		bottom: 1rem;
+		max-width: 40px;
+	}
+}
+
+/* #section__about {
+	height: 25rem;
+	background: right no-repeat url('../img/about_img_bg.jpg');
+} */
 
 /* TEAM  */
 
@@ -468,7 +415,6 @@ nav .nav-link,
 	border: 2px solid var(--color--offwhite);
 }
 
-footer,
 #section__contact {
 	color: var(--color--offwhite);
 }
@@ -528,6 +474,7 @@ h2,
 #carouselTestimonials .carousel-indicators [data-bs-target],
 #section__counter,
 footer .material-symbols-outlined,
+footer,
 #footer__contacts i,
 #section__about,
 #section__about h2,
@@ -542,14 +489,8 @@ footer .material-symbols-outlined,
 	color: var(--color--purple);
 }
 
-#section__hero .section__hero--brand,
-#section__about .block-purple--small,
-#section__about .block-purple--big {
+#section__hero .section__hero--brand {
 	background-color: var(--color--purple);
-}
-
-#section__about .block-white {
-	background-color: var(--color--offwhite);
 }
 
 #section__counter .card {
@@ -563,9 +504,11 @@ footer .material-symbols-outlined,
 	border: var(--color--purple) solid 2px;
 }
 
+#section__about .col:first-child,
+#section__about .col:last-child,
+#section__about .section__about--logo,
 #section__team .card img,
 #section__counter .card-counter,
-#section__about .block-text,
 #section__more .more-block--blue,
 #section__more .more-block--text {
 	background-color: var(--color--blue);
