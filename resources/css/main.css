@@ -258,12 +258,6 @@ footer .footer__brand--mobile {
 	border-radius: 25% 10%;
 }
 
-@media screen and (max-width: 768px) {
-	#section__counter {
-		/* height: 80vh; */
-	}
-}
-
 /* TESTIMONIALS */
 
 #carouselTestimonials .carousel--slide {
