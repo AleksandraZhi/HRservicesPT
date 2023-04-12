@@ -1,5 +1,5 @@
-const targetShow = document.querySelectorAll('section:not(#section__hero)')
-const targetHide = document.querySelector('#observer-hero')
+const targetShow = document.querySelectorAll('section:not(#section__about)')
+const targetHide = document.querySelector('#section__about')
 let section = ''
 
 // below fixing issue with navbar links not scrolling to the right section because of the fixed navbar
@@ -17,7 +17,7 @@ const optionsShow = {
 	threshold: 0.3,
 }
 const optionsHide = {
-	threshold: 1,
+	threshold: 0.1,
 }
 
 function handleIntersectionShow(entries) {
@@ -34,7 +34,7 @@ function handleIntersectionShow(entries) {
 
 function handleIntersectionHide(entry) {
 	if (entry.isIntersecting) {
-		// console.log('hide')
+		console.log('hide')
 		document
 			.querySelector('#header__nav--main .navbar')
 			.classList.remove('active')

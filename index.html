@@ -12,6 +12,7 @@
 		<meta name="robots" content="index, follow" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="language" content="English" />
+		<meta http-equiv="CACHE-CONTROL" content="NO-CACHE" />
 
 		<link rel="icon" href="./resources/icons/favicon.svg" />
 		<link rel="stylesheet" href="./resources/css/main.css" />
@@ -133,34 +134,37 @@
 			</header>
 
 			<main class="m-0 p-0">
-				<section
-					id="section__hero"
-					class="row d-flex justify-content-center justify-content-md-start align-items-center px-1 p-md-5 m-0"
-				>
+				<section id="section__about">
 					<div id="observer-hero">
-						<div
-							class="col col-sm-10 col-md-9 col-lg-6 d-flex flex-column justify-content-center alight-items-center px-0 mt-3"
-						>
-							<div class="hero--textbox my-sm-5 p-3 pb-5">
+						<div class="row m-0 p-0 d-flex flex-column flex-sm-row">
+							<!-- bigger screens -->
+							<div
+								class="col d-none d-sm-flex flex-column justify-content-end m-0 p-0"
+							>
 								<img
-									class="section__hero--brand img-fluid p-3 m-0 m-3"
-									src="./resources/logo/asg-insignia-fullcolour.svg"
-									alt="Altgott and Simpson Group logo"
+									class="section__about--logo-md ms-4 my-4 d-none"
+									src="./resources/logo/asg-insignia-white.svg"
 								/>
-								<h2 class="pb-2 px-3">Altgott & Simpson Group</h2>
-								<p class="px-3 pb-2">
-									Founded in 2022, Altgott & Simpson Group assists you to
-									quickly find and hire the best talent for less. Our team's
-									background combines recruitment experience with best-in-class
-									customer service, and an in house immigration team to ease and
-									optimise your entire recruitment process.
-								</p>
-								<a
-									class="mx-3 p-2"
-									href="mailto:thais@altgottandsimposongroup.com"
-								>
-									Get in touch today
-								</a>
+								<h2 class="ms-4 mb-3 mb-md-5">
+									Finding your next hospitality talent is easy with us
+								</h2>
+							</div>
+							<!-- smaller screens -->
+							<div class="section__about--logo col m-0 p-0">
+								<img
+									class="img-fluid"
+									src="./resources/img/about_img_bg_blue.jpg"
+									alt="decorative"
+								/>
+								<img
+									class="section__about--logo-sm d-block d-sm-none ms-3 ms-sm-4 mb-0 mb-sm-4"
+									src="./resources/logo/asg-insignia-white.svg"
+								/>
+							</div>
+							<div class="col d-flex flex-column d-sm-none m-0 p-0">
+								<h2 class="p-3">
+									Finding your next hospitality talent is easy with us
+								</h2>
 							</div>
 						</div>
 					</div>
@@ -629,67 +633,37 @@
 					</div>
 				</section>
 
-				<section id="section__about" class="">
-					<div class="row m-0 p-0 d-flex flex-column flex-sm-row">
-						<!-- bigger screens -->
-						<div
-							class="col d-none d-sm-flex flex-column justify-content-between m-0 p-0"
-						>
+				<section
+					id="section__company"
+					class="row d-flex justify-content-center justify-content-md-start align-items-center px-1 p-md-5 m-0"
+				>
+					<div
+						class="col col-sm-10 col-md-9 col-lg-6 d-flex flex-column justify-content-center alight-items-center px-0 mt-3"
+					>
+						<div class="company--textbox my-sm-5 p-3 pb-5">
 							<img
-								class="section__about--logo-md ms-4 my-4"
-								src="./resources/logo/asg-insignia-white.svg"
+								class="section__company--brand img-fluid p-3 m-0 m-3"
+								src="./resources/logo/asg-insignia-fullcolour.svg"
+								alt="Altgott and Simpson Group logo"
 							/>
-							<h2 class="ms-4 mb-3 mb-md-5">
-								Finding your next hospitality talent is easy with us
-							</h2>
-						</div>
-						<!-- smaller screens -->
-						<div class="section__about--logo col m-0 p-0">
-							<img
-								class="img-fluid"
-								src="./resources/img/about_img_bg_blue.jpg"
-								alt="decorative"
-							/>
-							<img
-								class="section__about--logo-sm d-block d-sm-none ms-3 ms-sm-4 mb-0 mb-sm-4"
-								src="./resources/logo/asg-insignia-white.svg"
-							/>
-						</div>
-						<div class="col d-flex flex-column d-sm-none m-0 p-0">
-							<h2 class="p-3">
-								Finding your next hospitality talent is easy with us
-							</h2>
+							<h2 class="pb-2 px-3">Altgott & Simpson Group</h2>
+							<p class="px-3 pb-2">
+								Founded in 2022, Altgott & Simpson Group assists you to quickly
+								find and hire the best talent for less. Our team's background
+								combines recruitment experience with best-in-class customer
+								service, and an in house immigration team to ease and optimise
+								your entire recruitment process.
+							</p>
+							<a
+								class="mx-3 p-2"
+								href="mailto:thais@altgottandsimposongroup.com"
+							>
+								Get in touch today
+							</a>
 						</div>
 					</div>
 				</section>
 
-				<!-- <section id="section__about" class="mt-5">
-					<div class="row m-0 p-0">
-						<div class="col m-0 p-0">
-							<div class="blocks">
-								<div class="block-purple--big"></div>
-								<div class="block-logo">
-									<img
-										class="img-fluid"
-										src="./resources/logo/asg-insignia-fullcolour.svg"
-									/>
-								</div>
-								<img
-									class="block-picture img-fluid"
-									src="./resources/img/about_img_bg.jpg"
-									alt="decorative"
-								/>
-								<div class="block-purple--small d-none d-sm-block"></div>
-								<div
-									class="block-text d-flex flex-column align-items-start justify-content-center p-3 p-sm-5"
-								>
-									<p>Finding your next hospitality talent is easy with us</p>
-								</div>
-								<div class="block-white"></div>
-							</div>
-						</div>
-					</div>
-				</section> -->
 				<section id="section__team" class="m-0 p-0 py-5">
 					<div class="row d-flex justify-content-center p-0 m-0">
 						<div class="col-11 col-sm-8 d-flex flex-column align-items-center">
@@ -985,7 +959,7 @@
 								Apply here
 							</a>
 							<button
-								class="btn button-candidates d-none"
+								class="btn button-candidates"
 								type="button"
 								data-bs-toggle="collapse"
 								data-bs-target="#section__vacancies"
@@ -994,9 +968,6 @@
 							>
 								Vacancies
 							</button>
-							<!-- <button class="btn button-candidates">
-								Vacancies
-							</button> -->
 						</div>
 					</div>
 				</section>
@@ -1033,12 +1004,15 @@
 											<div
 												class="d-flex flex-column justify-content-center align-items-center"
 											>
-												<h3 class="card-title text-center">Vacancy 1</h3>
+												<h3 class="card-title text-center">
+													Skilled and Semi-Skilled Butcher
+												</h3>
 											</div>
 											<p class="card-text">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												Donec nunc sapien, tristique vel feugiat at, semper eu
-												urna. Duis tristique velit orci, sit amet consectetur.
+												Skilled or semi-skilled butchers are required for our
+												Boning Hall teams who are responsible for cutting,
+												deboning and preparing carcasses before they are further
+												processed.
 											</p>
 											<p class="d-flex align-self-start">
 												<button
@@ -1071,7 +1045,9 @@
 													class="modal-title fs-5"
 													id="staticBackdropVacanciesLabel1"
 												>
-													<h3 class="card-title">Vacancy 1</h3>
+													<h3 class="card-title">
+														Skilled and Semi-Skilled Butcher
+													</h3>
 												</h1>
 												<button
 													type="button"
@@ -1081,45 +1057,87 @@
 												></button>
 											</div>
 											<div class="modal-body">
+												<h4>Salary:</h4>
 												<p>
-													Lorem ipsum dolor sit amet, consectetur adipiscing
-													elit. Donec nunc sapien, tristique vel feugiat at,
-													semper eu urna. Duis tristique velit orci, sit amet
-													consectetur.
+													Competitive rates of pay (£25000-£30,000 gross annual
+													pay), depending on experience and benefits to include:
+													Permanent full-time positions; Life assurance scheme;
+													Employee assistance programme; Rewards; Free hot
+													drinks.
 												</p>
+												<h4>Job Role:</h4>
 												<p>
-													Lorem ipsum dolor sit amet, consectetur adipiscing
-													elit. Donec nunc sapien, tristique vel feugiat at,
-													semper eu urna. Duis tristique velit orci, sit amet
-													consectetur. Lorem ipsum dolor sit amet, consectetur
-													adipiscing elit. Donec nunc sapien, tristique vel
-													feugiat at, semper eu urna. Duis tristique velit orci,
-													sit amet consectetur. Lorem ipsum dolor sit amet,
-													consectetur adipiscing elit.
+													Skilled or semi-skilled butchers are required for our
+													Boning Hall teams who are responsible for cutting,
+													deboning and preparing carcasses before they are
+													further processed.
+												</p>
+												<h4>Main Duties and Responsibilities:</h4>
+												<p><strong>Job role includes:</strong></p>
+												<ul>
+													<li>
+														To ensure the carcasses are dressed, trimmed and
+														packaged according to as directed by the Production
+														Management,
+													</li>
+													<li>
+														Cutting, de-boning and preparing carcasses for
+														further processing Boning and trimming the meat in
+														line with customer/company specifications,
+													</li>
+													<li>
+														Maximising the yield of the product and minimising
+														waste to ensure production is as efficient as
+														possible,
+													</li>
+													<li>
+														Undertake such duties as required in a safe and
+														hygienic manner,
+													</li>
+													<li>
+														To ensure that work is completed to production
+														deadlines and in accordance with food safety
+														regulations in force and relevant at the time,
+													</li>
+													<li>
+														Responsible for maximising the yield of the product
+														and minimising waste to ensure production is as
+														efficient as possible,
+													</li>
+													<li>
+														Follow the sites Health, Safety and Training
+														Procedures at all times.
+													</li>
+												</ul>
+
+												<p>
+													<strong>Knowledge, Experience and skills:</strong>
 												</p>
 												<ul>
-													<li>Lorem ipsum</li>
-													<li>Lorem ipsum</li>
+													<li>Good Practical butchery and knife skills,</li>
+													<li>A high standard of personal cleanliness,</li>
+													<li>
+														Full knowledge and experience within the industry,
+														with Cattle,
+													</li>
+													<li>Ability to work in a team,</li>
+													<li>Good time keeping and attendance,</li>
+													<li>Be self-motivated,</li>
+													<li>Have attention to detail,</li>
+													<li>Take pride in their work,</li>
+													<li>
+														Be committed to working within the Company Mission,
+														Vision & Values.
+													</li>
 												</ul>
-												<p>
-													Donec nunc sapien, tristique vel feugiat at, semper eu
-													urna. Duis tristique velit orci, sit amet consectetur.
-													Lorem ipsum dolor sit amet, consectetur adipiscing
-													elit. Donec nunc sapien, tristique vel feugiat at,
-													semper eu urna. Duis tristique velit orci, sit amet
-													consectetur. Lorem ipsum dolor sit amet, consectetur
-													adipiscing elit. Donec nunc sapien, tristique vel
-													feugiat at, semper eu urna. Duis tristique velit orci,
-													sit amet consectetur.
-												</p>
+											</div>
+											<div class="modal-footer d-flex justify-content-between">
 												<a
 													href="https://forms.monday.com/forms/3613c9883fce402e6e37f6ad455429f4?r=use1"
 													target="_blank"
 													class="button-vacancies--apply p-2"
 													>Apply</a
 												>
-											</div>
-											<div class="modal-footer">
 												<button
 													type="button"
 													class="btn"
@@ -1131,7 +1149,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col">
+								<div class="col d-none">
 									<div class="card h-100">
 										<div
 											class="card-body d-flex flex-column align-items-center"
@@ -1216,328 +1234,14 @@
 													feugiat at, semper eu urna. Duis tristique velit orci,
 													sit amet consectetur.
 												</p>
+											</div>
+											<div class="modal-footer d-flex justify-content-between">
 												<a
 													href="https://forms.monday.com/forms/3613c9883fce402e6e37f6ad455429f4?r=use1"
 													target="_blank"
 													class="button-vacancies--apply p-2"
 													>Apply</a
 												>
-											</div>
-											<div class="modal-footer">
-												<button
-													type="button"
-													class="btn"
-													data-bs-dismiss="modal"
-												>
-													Close
-												</button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col">
-									<div class="card h-100">
-										<div
-											class="card-body d-flex flex-column align-items-center"
-										>
-											<div
-												class="d-flex flex-column justify-content-center align-items-center"
-											>
-												<h3 class="card-title text-center">Vacancy 3</h3>
-											</div>
-											<p class="card-text">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												Donec nunc sapien, tristique vel feugiat at, semper eu
-												urna. Duis tristique velit orci, sit amet consectetur.
-											</p>
-											<p class="d-flex align-self-start">
-												<button
-													type="button"
-													class="btn m-1 p-0"
-													data-bs-toggle="modal"
-													data-bs-target="#staticBackdropVacancies3"
-												>
-													More
-												</button>
-											</p>
-										</div>
-									</div>
-								</div>
-								<div
-									class="modal fade"
-									id="staticBackdropVacancies3"
-									data-bs-backdrop="static"
-									data-bs-keyboard="false"
-									tabindex="-1"
-									aria-labelledby="staticBackdropVacanciesLabel3"
-									aria-hidden="true"
-								>
-									<div
-										class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
-									>
-										<div class="modal-content">
-											<div class="modal-header">
-												<h1
-													class="modal-title fs-5"
-													id="staticBackdropVacanciesLabel3"
-												>
-													<h3 class="card-title">Vacancy 3</h3>
-												</h1>
-												<button
-													type="button"
-													class="btn-close"
-													data-bs-dismiss="modal"
-													aria-label="Close"
-												></button>
-											</div>
-											<div class="modal-body">
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipiscing
-													elit. Donec nunc sapien, tristique vel feugiat at,
-													semper eu urna. Duis tristique velit orci, sit amet
-													consectetur.
-												</p>
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipiscing
-													elit. Donec nunc sapien, tristique vel feugiat at,
-													semper eu urna. Duis tristique velit orci, sit amet
-													consectetur. Lorem ipsum dolor sit amet, consectetur
-													adipiscing elit. Donec nunc sapien, tristique vel
-													feugiat at, semper eu urna. Duis tristique velit orci,
-													sit amet consectetur. Lorem ipsum dolor sit amet,
-													consectetur adipiscing elit.
-												</p>
-												<ul>
-													<li>Lorem ipsum</li>
-													<li>Lorem ipsum</li>
-												</ul>
-												<p>
-													Donec nunc sapien, tristique vel feugiat at, semper eu
-													urna. Duis tristique velit orci, sit amet consectetur.
-													Lorem ipsum dolor sit amet, consectetur adipiscing
-													elit. Donec nunc sapien, tristique vel feugiat at,
-													semper eu urna. Duis tristique velit orci, sit amet
-													consectetur. Lorem ipsum dolor sit amet, consectetur
-													adipiscing elit. Donec nunc sapien, tristique vel
-													feugiat at, semper eu urna. Duis tristique velit orci,
-													sit amet consectetur.
-												</p>
-												<a
-													href="https://forms.monday.com/forms/3613c9883fce402e6e37f6ad455429f4?r=use1"
-													target="_blank"
-													class="button-vacancies--apply p-2"
-													>Apply</a
-												>
-											</div>
-											<div class="modal-footer">
-												<button
-													type="button"
-													class="btn"
-													data-bs-dismiss="modal"
-												>
-													Close
-												</button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col">
-									<div class="card h-100">
-										<div
-											class="card-body d-flex flex-column align-items-center"
-										>
-											<div class="d-flex flex-column align-items-center">
-												<h3 class="card-title text-center">Vacancy 4</h3>
-											</div>
-											<p class="card-text">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												Donec nunc sapien, tristique vel feugiat at, semper eu
-												urna. Duis tristique velit orci, sit amet consectetur.
-											</p>
-											<p class="d-flex align-self-start">
-												<button
-													type="button"
-													class="btn m-1 p-0"
-													data-bs-toggle="modal"
-													data-bs-target="#staticBackdropVacancies4"
-												>
-													More
-												</button>
-											</p>
-										</div>
-									</div>
-								</div>
-								<div
-									class="modal fade"
-									id="staticBackdropVacancies4"
-									data-bs-backdrop="static"
-									data-bs-keyboard="false"
-									tabindex="-1"
-									aria-labelledby="staticBackdropVacanciesLabel4"
-									aria-hidden="true"
-								>
-									<div
-										class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
-									>
-										<div class="modal-content">
-											<div class="modal-header">
-												<h1
-													class="modal-title fs-5"
-													id="staticBackdropVacanciesLabel4"
-												>
-													<h3 class="card-title">Vacancy 4</h3>
-												</h1>
-												<button
-													type="button"
-													class="btn-close"
-													data-bs-dismiss="modal"
-													aria-label="Close"
-												></button>
-											</div>
-											<div class="modal-body">
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipiscing
-													elit. Donec nunc sapien, tristique vel feugiat at,
-													semper eu urna. Duis tristique velit orci, sit amet
-													consectetur.
-												</p>
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipiscing
-													elit. Donec nunc sapien, tristique vel feugiat at,
-													semper eu urna. Duis tristique velit orci, sit amet
-													consectetur. Lorem ipsum dolor sit amet, consectetur
-													adipiscing elit. Donec nunc sapien, tristique vel
-													feugiat at, semper eu urna. Duis tristique velit orci,
-													sit amet consectetur. Lorem ipsum dolor sit amet,
-													consectetur adipiscing elit.
-												</p>
-												<ul>
-													<li>Lorem ipsum</li>
-													<li>Lorem ipsum</li>
-												</ul>
-												<p>
-													Donec nunc sapien, tristique vel feugiat at, semper eu
-													urna. Duis tristique velit orci, sit amet consectetur.
-													Lorem ipsum dolor sit amet, consectetur adipiscing
-													elit. Donec nunc sapien, tristique vel feugiat at,
-													semper eu urna. Duis tristique velit orci, sit amet
-													consectetur. Lorem ipsum dolor sit amet, consectetur
-													adipiscing elit. Donec nunc sapien, tristique vel
-													feugiat at, semper eu urna. Duis tristique velit orci,
-													sit amet consectetur.
-												</p>
-												<a
-													href="https://forms.monday.com/forms/3613c9883fce402e6e37f6ad455429f4?r=use1"
-													target="_blank"
-													class="button-vacancies--apply p-2"
-													>Apply</a
-												>
-											</div>
-											<div class="modal-footer">
-												<button
-													type="button"
-													class="btn"
-													data-bs-dismiss="modal"
-												>
-													Close
-												</button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col">
-									<div class="card h-100">
-										<div
-											class="card-body d-flex flex-column align-items-center"
-										>
-											<div class="d-flex flex-column align-items-center">
-												<h3 class="card-title text-center">Vacancy 5</h3>
-											</div>
-											<p class="card-text">
-												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												Donec nunc sapien, tristique vel feugiat at, semper eu
-												urna. Duis tristique velit orci, sit amet consectetur.
-											</p>
-											<p class="d-flex align-self-start">
-												<button
-													type="button"
-													class="btn m-1 p-0"
-													data-bs-toggle="modal"
-													data-bs-target="#staticBackdropVacancies5"
-												>
-													More
-												</button>
-											</p>
-										</div>
-									</div>
-								</div>
-								<div
-									class="modal fade"
-									id="staticBackdropVacancies5"
-									data-bs-backdrop="static"
-									data-bs-keyboard="false"
-									tabindex="-1"
-									aria-labelledby="staticBackdropVacanciesLabel5"
-									aria-hidden="true"
-								>
-									<div
-										class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
-									>
-										<div class="modal-content">
-											<div class="modal-header">
-												<h1
-													class="modal-title fs-5"
-													id="staticBackdropVacanciesLabel5"
-												>
-													<h3 class="card-title">Vacancy 5</h3>
-												</h1>
-												<button
-													type="button"
-													class="btn-close"
-													data-bs-dismiss="modal"
-													aria-label="Close"
-												></button>
-											</div>
-											<div class="modal-body">
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipiscing
-													elit. Donec nunc sapien, tristique vel feugiat at,
-													semper eu urna. Duis tristique velit orci, sit amet
-													consectetur.
-												</p>
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipiscing
-													elit. Donec nunc sapien, tristique vel feugiat at,
-													semper eu urna. Duis tristique velit orci, sit amet
-													consectetur. Lorem ipsum dolor sit amet, consectetur
-													adipiscing elit. Donec nunc sapien, tristique vel
-													feugiat at, semper eu urna. Duis tristique velit orci,
-													sit amet consectetur. Lorem ipsum dolor sit amet,
-													consectetur adipiscing elit.
-												</p>
-												<ul>
-													<li>Lorem ipsum</li>
-													<li>Lorem ipsum</li>
-												</ul>
-												<p>
-													Donec nunc sapien, tristique vel feugiat at, semper eu
-													urna. Duis tristique velit orci, sit amet consectetur.
-													Lorem ipsum dolor sit amet, consectetur adipiscing
-													elit. Donec nunc sapien, tristique vel feugiat at,
-													semper eu urna. Duis tristique velit orci, sit amet
-													consectetur. Lorem ipsum dolor sit amet, consectetur
-													adipiscing elit. Donec nunc sapien, tristique vel
-													feugiat at, semper eu urna. Duis tristique velit orci,
-													sit amet consectetur.
-												</p>
-												<a
-													href="https://forms.monday.com/forms/3613c9883fce402e6e37f6ad455429f4?r=use1"
-													target="_blank"
-													class="button-vacancies--apply p-2"
-													>Apply</a
-												>
-											</div>
-											<div class="modal-footer">
 												<button
 													type="button"
 													class="btn"
